@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*default page set*/
+
+.A10605d0 {
+    padding: 60px 0;
+}
+
+.A10605d0 .page {
+    background: url("../images/A10605-news-bg.jpg") no-repeat;
+    background-size: cover;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    padding: 20px;
+}
+
+.A10605d0 .page::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    display: block;
+    background-size: contain;
+}
+
+.A10605d0 h2.dtit {
+    font-weight: 300;
+    padding-left: 5px;
+}
+
+.A10605d0 .list.list {
+    width: 70%;
+}
+
+.A10605d0 .list section {
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+    align-items: flex-start;
+}
+
+.A10605d0 .list h3.subject {
+    font-size: 14px;
+    font-weight: 300;
+    order: 2;
+    width: calc(100% - 7em);
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    line-height: 180%;
+}
+
+.A10605d0 .list .path {
+    order: 1;
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    padding-right: 5px;
+    border-right: 1px solid #000;
+    color: #000;
+}
+
+.A10605d1 {
+    padding: 0 0 50px 0;
+}
+
+.A10605d1 .page {
+    max-width: 1220px;
+}
+
+.A10605d1 h2.dtit {
+    text-align: center;
+    color: #22a7f4;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.A10605d1 .list .frm {
+    background: #eeeeee;
+}
+
+.A10605d1 .list section {
+    padding: 10px 15px 3px 15px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.A10605d1 .list h3.subject {
+    font-size: 22px;
+    color: #000;
+    font-weight: 500;
+}
+
+.A10605d2 {
+    padding-bottom: 60px;
+}
+
+.A10605d2 table td {
+    padding: 40px 60% 40px 40px;
+    line-height: 180%;
+    font-size: 15px;
+}
+
+.A10605d2 table h2 {
+    line-height: 160%;
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+    color: #323737;
+    padding-bottom: 20px;
+}
+
+.A10605d2 table .more {
+    margin-top: 40px;
+}
+
+.A10605d2 table .more a {
+    display: inline-block;
+    padding: 5px 1.5em;
+    background: rgba(255, 255, 255, .7);
+    color: #000;
+    border: 1px solid #000;
+}
+
+@media screen and (max-width:1286px) {
+    /*desktop*/
+}
+
+@media screen and (max-width:960px) {
+    /*desktop-small pad*/
+    .A10605d0 .page::before {
+        top: 50%;
+        transform: translateY(-30%);
+    }
+    .A10605d2 table td {
+        padding: 40px 40% 40px 40px;
+        line-height: 180%;
+        font-size: 15px;
+        position: relative;
+    }
+    .A10605d2 table td * {
+        position: relative;
+        z-index: 2;
+    }
+    .A10605d2 table td::after {
+        content: "";
+        width: 65%;
+        height: 100%;
+        display: block;
+        background: linear-gradient(90deg, rgba(255, 255, 255, .6) 80%, rgba(255, 255, 255, 0));
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .A10605d0 .list.list {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    /*phone*/
+    .A10605d0 .page::before {
+        top: 0%;
+        transform: translateY(-3%);
+        width: 40%;
+    }
+    .A10605d0 .list.list {
+        width: 100%;
+    }
+    .A10605d0 h2.dtit {
+        border-bottom: 1px solid #000;
+        padding-bottom: 10px;
+    }
+    .A10605d2 .page {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .A10605d2 table td {
+        padding: 20px;
+    }
+    .A10605d2 table td::after {
+        background: linear-gradient(90deg, rgba(255, 255, 255, .6) 80%, rgba(255, 255, 255, .6));
+        width: 100%;
+    }
+}
+
+/*=====================default page set end=====================*/
+
+/*A0502*/
+
+.A0502 .main .list .frm {
+    border: 1px solid #ccc;
+    background: linear-gradient(90deg, rgba(200, 200, 200, 1) 42px, rgba(255, 255, 255, 1) 42px);
+}
+
+.A0502 .main .list .innerhtml {
+    padding-left: 40px;
+    border-top: 1px solid #ccc;
+}
+
+.A0502 .main .list h3.subject {
+    padding: 0;
+}
+
+.A0502 .main .list h3.subject .foricon {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/*Contact4*/
+
+.Contact4 {
+    padding-bottom: 0;
+}
+
+.Contact4 .gmap .page {
+    max-width: 100%;
+    width: 100%;
+}
+
+.prodetail .introduction::before {
+    content: "詳細介紹";
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    color: #999;
+    font-weight: 500;
+    margin: 10px 0;
+    padding-bottom: 10px;
+}

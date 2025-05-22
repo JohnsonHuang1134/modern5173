@@ -1,0 +1,548 @@
+@charset "utf-8";
+/* CSS Document */
+
+.side,
+.main {
+    padding: 1em;
+}
+
+.page {
+    max-width: 1400px;
+    width: 100%;
+}
+
+#header {
+    transition: .3s;
+}
+
+#header .page {
+    padding: 0;
+    height: 85px;
+    max-width: 1400px;
+}
+
+/*--nav--*/
+
+.nav {
+    width: 80%;
+}
+
+.syisnav li a {
+    line-height: 1.3em;
+    word-break: break-all;
+    white-space: normal;
+    font-size: 18px;
+}
+
+#SearchForm {
+    padding-right: 27px;
+}
+
+/*--!syistop default setting--*/
+
+.syistop.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.syistop {
+    font-size: 13px;
+    line-height: 1.2em;
+    width: auto;
+    z-index: 1000;
+    white-space: nowrap;
+    float: right;
+    margin-left: 1em;
+}
+
+.syistop a {
+    padding-right: 3px;
+    position: relative;
+}
+
+.syistop a,
+.syistop .searcharea {
+    display: inline-block;
+    vertical-align: middle;
+    color: #666;
+    background: #fff;
+}
+
+.syistop img {
+    vertical-align: middle;
+}
+
+.searcharea {
+    border: 1px solid #ccc;
+}
+
+.searcharea input {
+    border: none;
+    padding: 5px;
+    width: 10em;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.searcharea a::before {
+    content: "";
+    width: 1px;
+    height: 1.3em;
+    display: inline-block;
+    background: #ccc;
+    transform: translateY(25%);
+    margin: 0 0.3em;
+}
+
+/*fixedbtn*/
+
+.fixedbtn {
+    position: fixed;
+    right: 1%;
+    bottom: 10vh;
+    z-index: 500;
+}
+
+.fixedbtn a {
+    display: block;
+    position: relative;
+}
+
+.fixedbtn a span {
+    position: absolute;
+    bottom: 20px;
+    right: 70%;
+    transform: translateX(50%);
+    font-size: 10px;
+    color: #fff;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #f00;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 3px;
+}
+
+/*--!content default setting--*/
+
+#defaultimg .page {
+    width: 100%;
+    padding: 0;
+}
+
+.sidetit {
+    color: #008cd6;
+    padding: 0.5em 0.3em;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.content .dtit {
+    color: #000;
+    font-size: 22px;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content .dtit::before {
+    content: "";
+    width: 2em;
+    height: 2px;
+    background: #14549b;
+    display: block;
+    position: absolute;
+    bottom: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main .btn {
+    margin-top: 2em;
+    text-align: right;
+}
+
+/*--!product_detail--*/
+
+.proDetail select,
+.productDetail input {
+    width: 100%;
+}
+
+a.minus,
+a.add {
+    width: 30px;
+    background: #fff;
+    font-size: 20px;
+    color: #333;
+    border: 1px solid #CCC;
+    line-height: 28px;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+a.minus:hover,
+a.add:hover {
+    background: #CCC;
+    color: #666;
+}
+
+.bookmark {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #efefef;
+    display: inline-block;
+    margin: 1em 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bookmark li {
+    cursor: pointer;
+    color: #999;
+    display: inline-block;
+    height: auto;
+    text-align: left;
+    padding: 0.5em;
+    font-size: 16px;
+    border: 1px solid #efefef;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    transform: translateY(1px);
+    background: #efefef;
+    margin: 0 2px;
+    font-weight: bold;
+}
+
+.bookmark li:hover {
+    color: #000;
+}
+
+.bookmark li.hit {
+    background: #fff;
+    color: #999;
+    border-bottom: 1px solid #fff;
+}
+
+/*product qa*/
+
+.qalist {
+    display: none;
+}
+
+.qablock {
+    border: 1px solid #efefef;
+    background: #efefef;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.qnum {
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    width: 40%;
+    float: left;
+    margin: 0;
+    padding: 0.2em;
+}
+
+.qdate {
+    font-size: 13px;
+    color: #999;
+    text-align: right;
+    width: 60%;
+    display: inline-block;
+    float: right;
+    margin: 0;
+    padding: 0.2em;
+}
+
+.qablock,
+.qablock section {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.qablock .innerhtml {
+    padding: 0.2em;
+}
+
+/*--!prodetail--*/
+
+.list.propic a {
+    border: 1px solid #ccc;
+    background: #fff;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.prodetail h1.subject {
+    font-size: 22px;
+    margin-top: 0;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+}
+
+.prodetail .ll,
+.prodetail .rr {
+    padding: 0 1em;
+}
+
+.prodetail h4.subtit {
+    margin-bottom: 0.5em;
+    color: #999;
+    border-bottom: 1px solid #ccc;
+}
+
+.prodetail h4.subtit span {
+    display: inline-block;
+    padding: 0.3em 1em;
+    border-radius: 0.5em 0.5em 0 0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    transform: translateY(2px);
+    background: #fff;
+}
+
+.prodetail .innerhtml img {
+    border: 0;
+    box-shadow: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.prodetail .introduction {
+    padding: 0.5em;
+}
+
+.simg {
+    margin-top: 10px;
+}
+
+.simg .list {
+    padding: 3px;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+}
+
+.simg .list a.frm {
+    padding: 0;
+    height: 60px;
+    overflow: hidden;
+    border: 1px solid #efefef;
+}
+
+/*--footer--*/
+
+#footer {
+    font-size: 13px;
+    line-height: 1.4em;
+    word-break: break-all;
+    padding: 2em 0 0 0;
+}
+
+#footer .navb {
+    list-style: none;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#footer .navb li {
+    padding: 0;
+    display: inline-block;
+}
+
+#footer .navb li a {
+    display: block;
+    padding: 0.3em 1em;
+    position: relative;
+}
+
+#footer .navb li:first-of-type a {
+    padding-left: 0;
+}
+
+#footer .navb li a:hover {
+    text-decoration: underline;
+}
+
+/*#footer .navb li a::before{content:""; width:1px; height:1em; background:#000; position:absolute; left:0; top:50%; transform:translateY(-50%); }*/
+
+#footer .navb li:last-of-type a::after {
+    display: none;
+}
+
+#footer .navb li a::after {
+    content: "";
+    width: 1px;
+    height: 1em;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#footer .flexfrm {
+    justify-content: space-between;
+}
+
+.sociallink {
+    margin-top: 2em;
+}
+
+.sociallink img {
+    margin-right: 10px;
+}
+
+.copyright {
+    background: #3e5265;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    margin-top: 20px;
+}
+
+/*=============================*/
+
+@media screen and (max-width:1500px) {
+    /*desktop*/
+}
+
+@media screen and (max-width:1286px) {
+    /*desktop*/
+    #defaultimg .page {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    .syisnav li a {
+        line-height: 1.3em;
+        word-break: break-all;
+        white-space: normal;
+        font-size: 13px;
+    }
+    .page {
+        padding: 0 2%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    /*desktop-small pad*/
+    .syisnav li a {
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+        font-size: 12px;
+    }
+    .searcharea input {
+        width: 5em;
+    }
+    /*--!prodetail--*/
+    .prodetail .ll,
+    .prodetail .rr {
+        padding: 0 10px;
+    }
+    .simg .list {
+        padding: 3px;
+        width: 56px;
+        height: 56px;
+        display: inline-block;
+    }
+    .simg .list a.frm {
+        padding: 0;
+        height: 50px;
+        overflow: hidden;
+        border: 1px solid #efefef;
+    }
+}
+
+@media screen and (max-width:767px) {
+    /*phone*/
+    #defaultimg .page {
+        padding: 0;
+    }
+    /*header default*/
+    .side,
+    .main {
+        padding: 1em 0;
+    }
+    #header .page {
+        height: 55px;
+    }
+    #header {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    .syistop {
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+        padding: 0.3em 0;
+    }
+    .syistop a {
+        padding-right: 0px;
+    }
+    .searcharea input {
+        width: 20em;
+    }
+    .page {
+        padding: 0 3%;
+    }
+    /*!nav default*/
+    .syisnav li a {
+        font-size: 16px;
+        width: 100%;
+        border-left: none;
+        border-bottom: 1px solid #666;
+        text-align: center;
+        padding: 0.5em 0;
+    }
+    .syisnav li ul li a {
+        font-size: 13px;
+    }
+    .pulldownlist.show {
+        display: none;
+    }
+    .logo {
+        z-index: 300;
+    }
+    .nav {
+        width: 100%;
+    }
+    #footer,
+    #footer .navb,
+    .sociallink {
+        text-align: center;
+    }
+    /*--list default setting--*/
+    .list,
+    .list .frm {
+        padding: 5px;
+    }
+    /*download*/
+    #footer .flexfrm {
+        flex-wrap: wrap;
+    }
+    #footer .navb {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #footer .ll,
+    #footer .rr {
+        width: 100%;
+        text-align: center;
+    }
+    #footer .rr {
+        padding: 0;
+    }
+}
